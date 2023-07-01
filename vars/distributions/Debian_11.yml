@@ -1,0 +1,4 @@
+---
+# vars file for template
+template_packages: []
+template_packages_to_remove: []
