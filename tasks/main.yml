@@ -5,12 +5,12 @@
 
 - name: Install packages
   when: template_packages is defined
-  ansible.builtin.package:
+  ansible.builtin.apt:
     name: "{{ template_packages }}"
     state: present
 
 - name: Remove packages
   when: template_packages_to_remove is defined
-  ansible.builtin.package:
+  ansible.builtin.apt:
     name: "{{ template_packages_to_remove }}"
     state: present
